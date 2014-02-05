@@ -1,0 +1,36 @@
+{
+  "name": "cultr.business.ualberta.ca",
+  "version": "0.0.0",
+  "description": "cultr project website.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@bitbucket.org:goldfishie/cultr.business.ualberta.ca.git"
+  },
+  "author": [
+    {
+      "name": "Kim Wu",
+      "email": "kwu1@ualberta.ca"
+    },
+    {
+      "name": "Eddie Antonio Santos",
+      "email": "easantos@ualberta.ca"
+    }
+  ],
+  "license": "all rights reserved",
+  "gitHead": "4f08362e35e6ed137bf65d44dc0bc890537fe5b3",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "express": "~3.4.7",
+    "swig": "1.1.0",
+    "express-shared-routes": "~0.1.1",
+    "redis": "~0.10.0",
+    "mongodb": "~1.3.23",
+    "async": "~0.2.10"
+  }
+}

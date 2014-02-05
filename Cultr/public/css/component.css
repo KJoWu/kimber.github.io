@@ -1,0 +1,222 @@
+/* Needed for a fluid height: */
+html, body, .container, .main { 
+	height: 100%;
+	background-color: #008FFF;
+
+}
+
+/* main wrapper */
+.cbp-contentslider {
+	width: 100%;
+	height: 660px;
+	position: relative;
+}
+
+.cbp-contentslider > ul {
+	list-style: none;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+/*Actualliding content*/
+.cbp-contentslider > ul li {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+.cbp-contentslider > ul li#slide1 {
+	background: #DF2D00;
+}
+
+.cbp-contentslider > ul li#slide2 {
+	background: url(../images/blue.png) 50% repeat fixed;;
+}
+
+.cbp-contentslider > ul li#slide3 {
+	background: url(../images/orange.png) 50% repeat fixed;
+}
+
+.cbp-contentslider > ul li#slide4 {
+	background:url(../images/green.png) 50% repeat fixed;
+}
+
+
+
+/* Whithout JS, we use :target */
+.cbp-contentslider > ul li:target {
+	z-index: 100;
+}
+
+.cbp-contentslider #main-nav nav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 4em;
+	z-index: 1000;
+	overflow: hidden;
+	box-shadow: 7px 2px 44px rgba(0, 0, 0, 0.6);
+}
+
+.cbp-contentslider #main-nav nav a {
+	float: left;
+	height: 100%;
+	font-size:30px;
+	overflow: hidden;
+	color: #8D8D8D;
+	font-size: 30px;
+	background: #534A4A;
+	text-align: center;
+	padding-top: 15px;
+	border-right: 5px solid #8D8D8D;
+	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cbp-contentslider #main-nav nav a span {
+	display: block;
+}
+
+.cbp-contentslider #main-nav nav a:last-child {
+	border: none;
+	box-shadow: 1px 0 #47a3da; /* fills gap caused by rounding */
+}
+
+
+/*DIFFERENT COLORS FOR DIFFERENT ONES ON MENU*/
+.cbp-contentslider #main-nav nav a.step-1.rc-active {
+	background-color: #FF3535;
+	color: #fff;
+}
+
+.cbp-contentslider #main-nav nav a.step-2.rc-active {
+	background-color: #00a0fc;
+	color: #fff;
+}
+
+.cbp-contentslider #main-nav nav a.step-3.rc-active {
+	background-color: #FC771E;
+	color: #fff;
+}
+
+.cbp-contentslider #main-nav nav a.step-4.rc-active {
+	background-color: #00ae10;
+	color: #fff;
+}
+
+
+.cbp-contentslider #slide1 h2 {
+	font-size: 3em;
+	font-weight: bold;
+	margin: 50px 0px 0px 50px;
+}
+
+
+.cbp-contentslider #slide1 h1 {
+	height: 2em;
+	line-height: 2;
+	text-shadow:2px 1px 1px rgba(93, 73, 73, 1);
+	position: relative;
+	color: #FFFFFF;
+}
+
+
+/*Title*/
+.cbp-contentslider h3 {
+	font-size: 3em;
+	height: 2em;
+	text-shadow:2px 1px 1px rgba(93, 73, 73, 1);
+	line-height: 2;
+	font-weight: 300;
+	color: #FFFFFF;
+	text-align: right;
+	letter-spacing: 0.3em;
+	padding: 0 1.1em 0 0;
+}
+
+.cbp-contentslider li#slide2 > div{
+	top:5.5em;
+} 
+
+.cbp-contentslider h3.icon-wolf {
+	box-shadow: 0px 2px 18px rgba(56, 32, 32, 0.4);
+}
+
+.cbp-contentslider h3.icon-aligator {
+	border-bottom: 90px solid #FFA300;
+	box-shadow: 0px 2px 18px rgba(56, 32, 32, 0.4);
+}
+
+.cbp-contentslider h3.icon-rabbit {
+	border-bottom: 90px solid #00a0fc;
+	box-shadow: 0px 2px 18px rgba(56, 32, 32, 0.4);
+}
+
+.cbp-contentslider h3.icon-turtle{
+	border-bottom: 90px solid #00ae10;
+	box-shadow: 0px 2px 18px rgba(56, 32, 32, 0.4);
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 70em) { 
+	.cbp-contentslider p {
+		font-size: 100%;
+	}
+}
+
+@media screen and (max-width: 67.75em) {
+
+	.cbp-contentslider { font-size: 85%; }
+
+	.cbp-contentslider #main-nav nav a[class^="icon-"]:before, 
+	.cbp-contentslider #main-nav nav a[class*=" icon-"]:before {
+		left: 50%;
+		margin-left: -1.250em;
+	}
+
+	.cbp-contentslider #main-nav nav a span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 43em) {
+
+	.cbp-contentslider h3 {
+		font-size: 2em;
+	}
+
+	.cbp-contentslider .cbp-content {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+	}
+
+	.cbp-contentslider li > div {
+		top: 5em;
+	}
+
+}
+
+@media screen and (max-width: 25em) { 
+	.cbp-contentslider nav a { padding: 0;}
+	.cbp-contentslider h3[class^="icon-"]:before, 
+	.cbp-contentslider h3[class*=" icon-"]:before { display: none;}
+}
+
+.jms-slideshow, .step{
+	width: 1000px;
+}
+.jms-content{
+	margin: 0px 390px 0px 60px;
+}
+.step img{
+	right: 40px;
+}

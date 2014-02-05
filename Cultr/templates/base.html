@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8' />
+    <title>{% block fulltitle %}{% block title %}{% endblock %} &mdash; cultr{% endblock %}</title>
+
+    {# Dynamically compile Less styles, but only when template_debug is on!  #}
+    {% if config.debug %}
+    <link media='all' rel="stylesheet/less" type="text/css"
+          href="{{ url_for('static', filename='style/styles.less') }}" />
+    <script src="{{ url_for('static', filename='js/less.js') }}" type="text/javascript"></script>
+    {% else %}
+    <link media='all' type='text/css' rel='stylesheet'
+          href="{{ url_for('static', filename='style/styles.css') }}" />
+    {% endif %}
+
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
