@@ -11,15 +11,12 @@
  #featured { 
           width: 940px;
           height: 450px;
-           background: #000 url('orbit/loading.gif') no-repeat center center; overflow: hidden; }
-     #featured img,  
-     #featured div { display: none; }
+          overflow: hidden; }
+      }
 
 
 #featured, div.orbit-wrapper { 
      position: absolute;
-     top: 50px; 
-     left: 50px;
 }
 
 /* CONTAINER
@@ -28,7 +25,10 @@
 div.orbit-wrapper {
     width: 1px;
     height: 1px;
-    position: relative; }
+    margin: auto;
+    margin-top: 3em;
+    box-shadow: 10px 17px 16px rgba(0, 0, 0, 0.55);
+    }
 
 div.orbit {
     width: 1px;
@@ -38,9 +38,10 @@ div.orbit {
 
 div.orbit>img {
     position: absolute;
-    top: 0;
     left: 0;
-    display: none; }
+    display: none; 
+    width:1000px;
+    height:490px;}
 
 div.orbit>a {
     border: none;
@@ -55,7 +56,7 @@ div.orbit>a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; }
+    height: 800px; }
 
 /* Note: If your slider only uses content or anchors, you're going to want to put the width and height declarations on the ".orbit>div" and "div.orbit>a" tags in addition to just the .orbit-wrapper */
 
@@ -129,17 +130,20 @@ span.pause.active {
     font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif; }
 
 .orbit-wrapper .orbit-caption {
-    background: #000;
-    background: rgba(0,0,0,.6);
-    z-index: 1000;
-    color: #fff;
-	text-align: center;
-	padding: 7px 0;
-    font-size: 13px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 100%; }
+background: rgba(7, 73, 82, 1);
+z-index: 1000;
+color: #fff;
+text-align: center;
+padding: 7px 0;
+font-size: 13px;
+right: 0;
+bottom: 91px;
+width: 100%;
+padding: 14px;
+height: 7em;
+padding-top: 2em;
+position: relative;
+}
 
 
 /* DIRECTIONAL NAV

@@ -1,3 +1,8 @@
+#bg-sec2{
+	background-image: url(../img/bg4.png) 100% repeat fixed;
+	width:100%;
+}
+
 .st-container {
 	position: absolute;
 	width: 100%;
@@ -5,13 +10,14 @@
 	top: 0;
 	left: 0;
 	font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+	background: url(../img/bg4.png) 100% repeat fixed;
 }
 
 .st-container > input,
 .st-container > a {
 position: fixed;
 bottom: 0px;
-width: 20%;
+width: 25%;
 cursor: pointer;
 font-size: 2em;
 height: 56px;
@@ -26,7 +32,7 @@ line-height: 60px;
 .st-container > a {
 	z-index: 10;
 	font-weight: 700;
-	background: #000;   /*BACKGROUND MENU COLOR*/
+	background: #008aff;   /*BACKGROUND MENU COLOR*/
 	color: #fff;
 	text-align: center;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
@@ -38,7 +44,7 @@ line-height: 60px;
 	position: fixed;
 	width: 100%;
 	height: 34px;
-	background: #e23a6e;
+	background: #bef500;
 	z-index: 9;
 	bottom: 0;
 }
@@ -48,24 +54,24 @@ line-height: 60px;
 }
 
 #st-control-2, #st-control-2 + a {
-	left: 20%;
+	left: 25%;
 }
 
 #st-control-3, #st-control-3 + a {
-	left: 40%;
+	left: 50%;
 }
 
 #st-control-4, #st-control-4 + a {
-	left: 60%;
+	left: 75%;
 }
 
 #st-control-5, #st-control-5 + a {
-	left: 80%;
+	left: 100%;
 }
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #821134;
+	background: #ff9c00;   /*Highlighted part*/
 }
 
 .st-container > input:checked + a:after,
@@ -77,18 +83,18 @@ line-height: 60px;
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #821134;
+	border-bottom-color: #ff9c00;    /*Highlighted part*/
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
 }
 
-.st-container > input:hover + a{
-	background: #AD244F;
+.st-container > input:hover + a{    /*MENU HOVER COLOR*/
+	background: #ff42a8;
 }
 
 .st-container > input:hover + a:after {
-	border-bottom-color: #AD244F;
+	border-bottom-color: #f59c00;
 }
 
 .st-scroll,
@@ -112,15 +118,22 @@ line-height: 60px;
 	-webkit-backface-visibility: hidden;
 }
 
-.st-panel{
-	background: #fff;
+#st-panel-1.st-panel{
+	background: url(../img/bg2.png) 50% repeat fixed;
 	overflow: hidden;
 } 
 
-#st-panel-3{
-	background: #000;
 
-}
+.st-container #st-panel-3.st-panel{
+	background: url(../img/bg2.png) 50% repeat fixed;
+	overflow: hidden;
+} 
+
+#st-panel-4.st-panel{
+background: url(../img/bg6.png) 50% repeat fixed;
+	overflow: hidden;
+} 
+
 
 #st-control-1:checked ~ .st-scroll {
 	-webkit-transform: translateY(0%);
@@ -198,19 +211,33 @@ line-height: 60px;
 }
 
 .st-panel h2 {
-	color: #e23a6e;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-	position: absolute;
-	font-size: 54px;
-	font-weight: 900;
-	width: 80%;
-	left: 10%;
-	text-align: center;
-	line-height: 50px;
-	margin: -70px 0 0 0;
-	padding: 0;
-	top: 50%;
-	-webkit-backface-visibility: hidden;
+color: #e23a6e;
+text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+position: absolute;
+font-size: 54px;
+font-weight: 900;
+width: 100%;
+text-align: center;
+line-height: 50px;
+-webkit-backface-visibility: hidden;
+background: url(../img/bg1.png) 100% repeat fixed;
+height: 100%;
+margin: 0;
+}
+
+.st-panel h3 {
+color: #e23a6e;
+text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+position: absolute;
+font-size: 54px;
+font-weight: 900;
+width: 100%;
+text-align: center;
+line-height: 50px;
+-webkit-backface-visibility: hidden;
+background: url(../img/bg4.png) 100% repeat fixed;
+height: 100%;
+margin: 0;
 }
 
 #st-control-1:checked ~ .st-scroll #st-panel-1 h2,
@@ -373,8 +400,9 @@ line-height: 60px;
 	background: #fff;
 }
 .st-color h2 {
-	color: #fff;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	color: #00D7F5;
+text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+padding-top: 1em;
 } 
 .st-color p {
 	color: #fff;
