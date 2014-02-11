@@ -1,6 +1,27 @@
+#resume{
+height: 100%;
+width: 100%;
+overflow: auto !important;
+font-size: 20px;
+color: #fff;
+padding: 0 4em;
+padding-top: 6em;
+padding-bottom: 5em;
+font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+h5{
+	font-size: 1.83em;
+	margin: 0.67em 0;
+	color: #FFC200;
+}
+
+
+
 #bg-sec2{
-	background-image: url(../img/bg4.png) 100% repeat fixed;
-	width:100%;
+background: url(../img/bg1.png) 100% repeat;
+width: 100%;
+height: 100%;
 }
 
 .st-container {
@@ -17,7 +38,7 @@
 .st-container > a {
 position: fixed;
 bottom: 0px;
-width: 25%;
+width: 26%;
 cursor: pointer;
 font-size: 2em;
 height: 56px;
@@ -71,7 +92,7 @@ line-height: 60px;
 
 .st-container > input:checked + a,
 .st-container > input:checked:hover + a{
-	background: #ff9c00;   /*Highlighted part*/
+	background: #0050f2;   /*Highlighted part*/
 }
 
 .st-container > input:checked + a:after,
@@ -83,18 +104,18 @@ line-height: 60px;
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #ff9c00;    /*Highlighted part*/
+	border-bottom-color: #0050f2;    /*Highlighted part*/
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
 }
 
 .st-container > input:hover + a{    /*MENU HOVER COLOR*/
-	background: #ff42a8;
+	background: #ff9c00;
 }
 
 .st-container > input:hover + a:after {
-	border-bottom-color: #f59c00;
+	border-bottom-color: #ff9c00;
 }
 
 .st-scroll,
@@ -119,18 +140,20 @@ line-height: 60px;
 }
 
 #st-panel-1.st-panel{
-	background: url(../img/bg2.png) 50% repeat fixed;
+	background: url(../img/ed.png) 50% repeat fixed;
+	overflow: hidden;
+} 
+
+#st-panel-2.st-panel{
 	overflow: hidden;
 } 
 
 
 .st-container #st-panel-3.st-panel{
-	background: url(../img/bg2.png) 50% repeat fixed;
 	overflow: hidden;
 } 
 
 #st-panel-4.st-panel{
-background: url(../img/bg6.png) 50% repeat fixed;
 	overflow: hidden;
 } 
 
@@ -211,18 +234,20 @@ background: url(../img/bg6.png) 50% repeat fixed;
 }
 
 .st-panel h2 {
-color: #e23a6e;
+color: #FFFFFF;
 text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-position: absolute;
-font-size: 54px;
+position: relative;
+font-size: 2.5em;
 font-weight: 900;
 width: 100%;
 text-align: center;
-line-height: 50px;
 -webkit-backface-visibility: hidden;
-background: url(../img/bg1.png) 100% repeat fixed;
-height: 100%;
 margin: 0;
+padding-bottom: 0.5em;
+position: absolute;
+background-color: rgba(0, 191, 252, 0.89);
+box-shadow: 28px 36px 60px rgba(0, 0, 0, 0.74);
+z-index: 20;
 }
 
 .st-panel h3 {
@@ -306,20 +331,11 @@ margin: 0;
 	}
 }
 
-.st-panel p {
-	position: absolute;
-	text-align: center;
-	font-size: 16px;
-	line-height: 22px;
-	color: #8b8b8b;
-	z-index: 2;
-	padding: 0;
-	width: 50%;
-	left: 25%;
-	top: 50%;
-	margin: 10px 0 0 0;
-	-webkit-backface-visibility: hidden;
+p {
+margin: 10px 0 0 0;
+-webkit-backface-visibility: hidden;
 }
+
 #st-control-1:checked ~ .st-scroll #st-panel-1 p,
 #st-control-2:checked ~ .st-scroll #st-panel-2 p,
 #st-control-3:checked ~ .st-scroll #st-panel-3 p,
@@ -389,10 +405,6 @@ margin: 0;
 
 /* Colored sections */
 
-.st-color,
-.st-deco{
-	background: #fa96b5;
-}
 .st-color [data-icon]:after {
 	color: #fa96b5;
 }
@@ -400,14 +412,11 @@ margin: 0;
 	background: #fff;
 }
 .st-color h2 {
-	color: #00D7F5;
+	color: #D6FF00
 text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 padding-top: 1em;
 } 
-.st-color p {
-	color: #fff;
-	color: rgba(255,255,255,0.8);
-}
+
 
 @media screen and (max-width: 520px) {
 	.st-panel h2 {
