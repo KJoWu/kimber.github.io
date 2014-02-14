@@ -10,12 +10,23 @@ padding-bottom: 5em;
 font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
 }
 
+#resume a{
+	color: #C2FF00;
+}
+
+#resume b,strong{
+	color: #00E0FF;
+}
+
 h5{
 	font-size: 1.83em;
 	margin: 0.67em 0;
 	color: #FFC200;
 }
 
+.section-4 p{
+color:fff;
+}
 
 
 #bg-sec2{
