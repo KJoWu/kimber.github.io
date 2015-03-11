@@ -76,18 +76,37 @@ SECTIONS
 
 #slide-1 {
     text-align: center;
-    background-color: #000;
-    height: 500px;
+    width:100%;
+    height: 600px;
+    background: url("../img/slide1.jpg") no-repeat center;
+    background-size: cover;
 }
+
 #slide-1 h1 {
-    padding-top: 2em;
-    color: #DFCCA7;
-    font-weight: 500;
-    padding-bottom: 17px;
-    font-size: 7em;
+  padding-top: 3em;
+  color: #f4dea2;
+  font-weight: 500;
+  padding-bottom: 17px;
+  font-size: 7em;
 }
+
 #slide-1 h4 {
     font-weight: 100;
-    color: #908686;
+    color: #e5ded8;
     margin: 0;
 }
+
+
+#slide-2 {
+    text-align: center;
+    width:100%;
+    height: 500px;
+    background-color:seagreen;
+}
+
+
+
+
+
+
+
