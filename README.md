@@ -1,3 +1,3 @@
 kimber.github.io
 ================
-new site
+Kim's site
