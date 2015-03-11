@@ -22,7 +22,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -33,9 +37,9 @@
 
     <!-- Navigation
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header>
+    <header>
         <nav>
-            <ul>
+            <ul id="menu">
                 <li><a href="#">Home</a>
                 </li>
                 <li><a href="#">Resume</a>
@@ -53,7 +57,7 @@
     <section id="slide-1">
         <div class="container">
             <div class="row">
-                <div class="one-half column" style="margin-top: 25%">
+                <div class="one-half column">
                     <h1>Kimberly Wu <h1>
                       <h4> Front End Web Developer </h4>
                       <h4> Graphic Designer </h4>
@@ -77,6 +81,15 @@
     <section id="slide-5">
 
     </section>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#menu').slicknav();
+});
+</script>
 
 
     <!-- End Document
