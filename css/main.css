@@ -1,63 +1,77 @@
 body {
-	font-family:Helvetica, Arial, sans-serif;
-	margin:0;
-	padding:0;
-	font-size:100%;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
-
-
-
 /*******************************
 PLUGINS
 *******************************/
 
 .slicknav_menu {
-	display:none;
+    display: none;
 }
-
 @media screen and (max-width: 40em) {
-	.js #menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
+    .js #menu {
+        display: none;
+    }
+    .js .slicknav_menu {
+        display: block;
+    }
 }
-
 li {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
-
+ul {
+    margin: 0;
+}
+ul#menu {
+    padding: 1.5em;
+}
 /*******************************
 NAVIGATION
 *******************************/
+
 nav {
-  text-align: center;
-  background-color: black;
-  padding: 1em;
+    text-align: center;
+    background-color: #222222;
 }
-
-nav ul{
-	list-style:none; 
-	margin:0 10px;
-	padding:0px;
-
+nav ul {
+    list-style: none;
+    padding: 0px;
 }
-
-nav li{
-		display:inline-block; 
+nav li {
+    display: inline-block;
 }
-
 nav a {
-  /* font-weight: 800; */
-  padding: 12px 31px;
-  text-decoration: none;
-  font-size: 2em;
-  color: #A5A5A5;
+    /* font-weight: 800; */
+    
+    padding: 0 31px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #A5A5A5;
 }
+nav a:hover {
+    color: #F2D300;
+}
+/*******************************
+SECTIONS
+*******************************/
 
-nav a:hover{
-	color: #F2D300;
+#slide-1 {
+    text-align: center;
+    background-color: #000;
+    height: 500px;
 }
+#slide-1 h1 {
+    padding-top: 2em;
+    color: #DFCCA7;
+    font-weight: 500;
+    padding-bottom: 17px;
+    font-size: 7em;
+}
+#slide-1 h4 {
+    font-weight: 100;
+    color: #908686;
+    margin: 0;
 }
