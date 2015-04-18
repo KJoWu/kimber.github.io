@@ -79,4 +79,27 @@ PORTFOLIO
 }
 
 
+/*******************************
+PROGRAMING 
+*******************************/
+#programming{
+      background: url(../img/bg1.png) 100% repeat;
+
+}
+
+/*******************************
+AWARDS
+*******************************/
+#awards{
+      background-color:seagreen;
+
+}
+
+/*******************************
+CONTACT
+*******************************/
+#contact{
+      background-color: black;
+
+}
 
