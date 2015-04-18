@@ -90,6 +90,7 @@
             </div>
         </div>
     </section>
+    
     <!--
     Portfolio
     ======================================================================================== -->
@@ -97,21 +98,68 @@
         <div class="container">
             <h3 class="section-heading text-center">Graphic Design/Media Projects</h3>
             <hr class="light">
+
+            <!--KIAS-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" href="#">
+                <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#">
                     <img class="img-responsive" src="img/kias.png" alt="">
                 </a>
             </div>
+            <!-- KIAS MODAL -->
+            <div class="modal fade" id="kiasModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="kiasModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Engineer-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" href="#">
+                <a class="thumbnail" data-toggle="modal" data-target="#engineerModal" href="#">
                     <img class="img-responsive" src="img/engineer.png" alt="">
                 </a>
             </div>
+            <!--Engineer Modal-->
+            <div class="modal fade" id="engineerModal" tabindex="-1" role="dialog" aria-labelledby="engineerModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="engineerModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Science-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="img/science.png" alt="">
                 </a>
             </div>
+
+
+
+
+            
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" href="#">
                     <img class="img-responsive" src="img/swac.png" alt="">
@@ -148,11 +196,9 @@
         </div>
     </section>
     <section id="awards">
- 
         <div class="container">
-                <h3 class="section-heading text-center">  Recognition</h3>
-            <hr class="light"> 
-            Recognitions
+            <h3 class="section-heading text-center">  Recognition</h3>
+            <hr class="light"> Recognitions
         </div>
     </section>
     <section id="contact">
