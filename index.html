@@ -30,13 +30,15 @@
     <!--SLIDER-->
     <!-- jQuery library (served from Google) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript">
-    var jQuery_1_8_2 = $.noConflict(true);
-    </script>
-
-
     <script src="js/jquery.js"></script>
-
+    <script type="text/javascript">
+    var jQuery_1_9_1 = $.noConflict(true);
+    </script>
+    <!--SLIDER-->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -122,6 +124,43 @@
                             <h4 class="modal-title" id="kiasModalLabel">Kias Graphic Artist/Videographer</h4>
                         </div>
                         <div class="modal-body">
+                            <div id="owl-example" class="owl-carousel">
+                                <div class="item darkCyan">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Touch</h3>
+                                    <h4>Can touch this</h4>
+                                </div>
+                                <div class="item forestGreen">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Grab</h3>
+                                    <h4>Can grab this</h4>
+                                </div>
+                                <div class="item orange">
+                                    <img src="img/swac.png" alt="Tons of Opotions">
+                                    <h3>Responsive</h3>
+                                    <h4>Fully responsive!</h4>
+                                </div>
+                                <div class="item yellow">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>CSS3</h3>
+                                    <h4>3D Acceleration.</h4>
+                                </div>
+                                <div class="item dodgerBlue">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Multiply</h3>
+                                    <h4>Owls on page.</h4>
+                                </div>
+                                <div class="item skyBlue">
+                                    <img src="img/swac.png" alt="Tons of Opotions">
+                                    <h3>Modern</h3>
+                                    <h4>Browsers Compatibility</h4>
+                                </div>
+                                <div class="item zombieGreen">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Zombie</h3>
+                                    <h4>Browsers Compatibility</h4>
+                                </div>
+                            </div>
                             ...
                         </div>
                         <div class="modal-footer">
@@ -145,7 +184,18 @@
                             <h4 class="modal-title" id="engineerModalLabel">Modal title</h4>
                         </div>
                         <div class="modal-body">
-                            ...
+                             <div id="owl-example2" class="owl-carousel">
+                                <div class="item darkCyan">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Touch</h3>
+                                    <h4>Can touch this</h4>
+                                </div>
+                                <div class="item forestGreen">
+                                    <img src="img/ainlay.png" alt="Light">
+                                    <h3>Grab</h3>
+                                    <h4>Can grab this</h4>
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -312,8 +362,25 @@
             Contact
         </div>
     </section>
+    <!-- Frontpage Demo -->
+    <script>
+    $(document).ready(function($) {
+        $("#owl-example").owlCarousel({
+            navigation: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
+        });
+
+        $("#owl-example2").owlCarousel({
+            navigation: true, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
+        });
 
 
+    });
     </script>
     <!-- jQuery -->
     <!-- Bootstrap Core JavaScript -->
