@@ -35,6 +35,13 @@ h3 {
     border-width: 3px;
 }
 
+.section-heading {
+  font-size: 3em;
+  /* font-family: 'Lato', sans-serif; */
+  font-weight: 300;
+  color: rgb(0, 149, 203);
+}
+
 header {
     position: relative;
     width: 100%;

@@ -27,6 +27,20 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--SLIDER-->
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">
+    var jQuery_1_8_2 = $.noConflict(true);
+    </script>
+
+
+    <script src="js/jquery.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -90,15 +104,13 @@
             </div>
         </div>
     </section>
-    
     <!--
     Portfolio
     ======================================================================================== -->
     <section id="portfolio">
         <div class="container">
             <h3 class="section-heading text-center">Graphic Design/Media Projects</h3>
-            <hr class="light">
-
+            <hr>
             <!--KIAS-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#">
@@ -111,44 +123,40 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="kiasModalLabel">Modal title</h4>
+                            <h4 class="modal-title" id="kiasModalLabel">Kias Graphic Artist/Videographer</h4>
                         </div>
                         <div class="modal-body">
                             ...
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <p class="text-left">Designed promotional buttons, layouts and videographer for Kias Conference 2013.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--KIAS-->
+            <!--ENGINEER-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#">
+                <a class="thumbnail" data-toggle="modal" data-target="#engineerModal" href="#">
                     <img class="img-responsive" src="img/engineer.png" alt="">
                 </a>
             </div>
-            <!-- KIAS MODAL -->
-            <div class="modal fade" id="kiasModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
+            <!-- ENGINEER MODAL -->
+            <div class="modal fade" id="engineerModal" tabindex="-1" role="dialog" aria-labelledby="engineerModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="kiasModalLabel">Modal title</h4>
+                            <h4 class="modal-title" id="engineerModalLabel">Modal title</h4>
                         </div>
                         <div class="modal-body">
                             ...
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--Science-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#scienceModal" href="#">
@@ -168,13 +176,10 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-
-
             <!--swac MODAL-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#swacModal" href="#">
@@ -194,12 +199,10 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--CRESWTOOD MODAL-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#crestwoodModal" href="#">
@@ -219,12 +222,10 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--AINLAY MODAL-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#ainlayModal" href="#">
@@ -244,12 +245,10 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--RESEARCH MODAL-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#researchModal" href="#">
@@ -268,13 +267,11 @@
                             ...
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            asd
                         </div>
                     </div>
                 </div>
             </div>
-
             <!--ADDITIONAL MODAL-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
                 <a class="thumbnail" data-toggle="modal" data-target="#additionalModal" href="#">
@@ -293,8 +290,7 @@
                             ...
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            Front end developer
                         </div>
                     </div>
                 </div>
@@ -320,8 +316,17 @@
             Contact
         </div>
     </section>
+    <ul class="bxslider">
+        <li><img src="img/crestwood.png"></li>
+        <li><img src="img/engineer.png"></li>
+        <li><img src="img/ainlay.png"></li>
+    </ul>
+    <script>
+    $(document).ready(function() {
+        $('.bxslider').bxSlider();
+    });
+    </script>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
