@@ -39,7 +39,14 @@
 	
 .owl-carousel .owl-item{
 	float: left;
+	height:100%;
 }
+
+.owl-video{
+	width:100%;
+	height:auto;
+}
+
 .owl-controls .owl-page,
 .owl-controls .owl-buttons div{
 	cursor: pointer;

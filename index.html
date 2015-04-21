@@ -111,7 +111,7 @@
             <hr>
             <!--KIAS-->
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#">
+                <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#kiasModal">
                     <img class="img-responsive" src="img/kias.png" alt="">
                 </a>
             </div>
@@ -124,47 +124,40 @@
                             <h4 class="modal-title" id="kiasModalLabel">Kias Graphic Artist/Videographer</h4>
                         </div>
                         <div class="modal-body">
-                            <div id="owl-example" class="owl-carousel">
-                                <div class="item darkCyan">
-                                    <img src="img/ainlay.png" alt="Light">
-                                    <h3>Touch</h3>
-                                    <h4>Can touch this</h4>
-                                </div>
-                                <div class="item forestGreen">
-                                    <img src="img/ainlay.png" alt="Light">
+                            <div id="kias-owl" class="owl-carousel">
+                                <div class="item">
+                                    <img src="img/kias-1.png" alt="Light">
                                     <h3>Grab</h3>
                                     <h4>Can grab this</h4>
                                 </div>
-                                <div class="item orange">
+                                <div class="item">
+                                    <img src="img/kias-2.png" alt="Light">
+                                    <h3>Grab</h3>
+                                    <h4>Can grab this</h4>
+                                </div>
+                                <div class="item">
+                                    <a href="https://www.youtube.com/watch?v=cRgB0sU_IpI"><img src="img/kias-video.png" alt="Light"></a>
+                                    <h4>Kias Tomorrow's Ideas Now Conference</h4>
+                                    <p>Videographer of Kias video.</p>
+                                </div>
+                                <div class="item">
                                     <img src="img/swac.png" alt="Tons of Opotions">
                                     <h3>Responsive</h3>
                                     <h4>Fully responsive!</h4>
                                 </div>
-                                <div class="item yellow">
+                                <div class="item">
                                     <img src="img/ainlay.png" alt="Light">
                                     <h3>CSS3</h3>
                                     <h4>3D Acceleration.</h4>
                                 </div>
-                                <div class="item dodgerBlue">
+                                <div class="item">
                                     <img src="img/ainlay.png" alt="Light">
                                     <h3>Multiply</h3>
                                     <h4>Owls on page.</h4>
                                 </div>
-                                <div class="item skyBlue">
-                                    <img src="img/swac.png" alt="Tons of Opotions">
-                                    <h3>Modern</h3>
-                                    <h4>Browsers Compatibility</h4>
-                                </div>
-                                <div class="item zombieGreen">
-                                    <img src="img/ainlay.png" alt="Light">
-                                    <h3>Zombie</h3>
-                                    <h4>Browsers Compatibility</h4>
-                                </div>
                             </div>
-                            ...
                         </div>
                         <div class="modal-footer">
-                            <p class="text-left">Designed promotional buttons, layouts and videographer for Kias Conference 2013.</p>
                         </div>
                     </div>
                 </div>
@@ -184,7 +177,7 @@
                             <h4 class="modal-title" id="engineerModalLabel">Modal title</h4>
                         </div>
                         <div class="modal-body">
-                             <div id="owl-example2" class="owl-carousel">
+                            <div id="owl-example2" class="owl-carousel">
                                 <div class="item darkCyan">
                                     <img src="img/ainlay.png" alt="Light">
                                     <h3>Touch</h3>
@@ -365,18 +358,21 @@
     <!-- Frontpage Demo -->
     <script>
     $(document).ready(function($) {
-        $("#owl-example").owlCarousel({
+
+        $("#kias-owl").owlCarousel({
             navigation: true, // Show next and prev buttons
             slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true
-        });
+            singleItem: true,
+            autoHeight: true
 
+        });
         $("#owl-example2").owlCarousel({
             navigation: true, // Show next and prev buttons
             slideSpeed: 300,
-            paginationSpeed: 400,
-            singleItem: true
+            singleItem: true,
+            autoHeight: true
+
+
         });
 
 
