@@ -78,28 +78,10 @@ PORTFOLIO
 }
 
 .default {
-  font-size: 1.5em;
-  margin: 1.2em 0;
-  font-weight: 100;
-  color: #FFFCEF;
-}
-
-.contact {
-    font-size: 2.5em;
-color: #2D88F0;
-}
-
-.contact-1{
-  font-size: 5em;
-}
-
-.fa{
-  padding:0 0.5em;
-}
-footer {
-    padding: 3em;
-    margin-top: 10em;
-    background-color: rgba(0, 0, 0, 0.83);
+    font-size: 1.5em;
+    margin: 1.2em 0;
+    font-weight: 100;
+    color: #FFFCEF;
 }
 /*******************************
 PROGRAMING 
@@ -131,5 +113,23 @@ CONTACT
 *******************************/
 
 #contact {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.88);
+    color: #747474;
+}
+
+p.contact-1 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.fa {
+    padding: 0 0.5em;
+    font-size: 3em;
+}
+
+footer {
+    padding: 3em;
+    margin-top: 10em;
+    background-color: rgba(0, 0, 0, 0.83);
 }
