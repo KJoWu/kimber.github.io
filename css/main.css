@@ -9,6 +9,9 @@ section {
   background-color: #F7F7F7;
 }
 
+a:hover{
+  text-decoration: none;
+}
 /*******************************
 TOP
 *******************************/
