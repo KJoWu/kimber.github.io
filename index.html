@@ -42,6 +42,10 @@
 </head>
 
 <body id="page-top">
+    <!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- BURGER BAR-->
@@ -459,7 +463,7 @@
             <h3 class="section-heading text-center">  Programming Related Work</h3>
             <hr class="light">
             <p>Computer Programming and Web Development: Python, Java/Android, HTML CSS, SASS, Foundations, jQuery, Version Control.</p>
-            <p>Level designer, script developer for <a href="https://sites.google.com/a/ualberta.ca/cmput250award2015/nominees" target="blank"> The Voices in Rosemary </p></a>
+            <p>Level designer, script developer for <a href="https://sites.google.com/a/ualberta.ca/cmput250award2015/nominees" target="blank"> The Voices of Rosemary </p></a>
                 <p>Front end developer for <a href="https://www.youtube.com/watch?v=3J25JH9TEEo" target="blank">  Storyhoard (Android Application)</a>
                     <p> Front end developer for "Notetaking that Works": <a href="http://ssds.meteor.com/" target="blank"> Note Taking App </p></a>
                         <p>Wed Designer/Programmer for CODE Hackathon 2014: <a href="https://www.youtube.com/watch?v=9Wo2iGwhUVo" target="blank"> Forward, the Application </p></a>
@@ -489,6 +493,21 @@
             </div>
         </footer>
     </section>
+
+
+    <!-- jQuery Plugin -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script> 
     <!-- Frontpage Demo -->
     <script>
     $(document).ready(function($) {
