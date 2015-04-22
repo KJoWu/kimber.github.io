@@ -78,15 +78,24 @@ PORTFOLIO
 }
 
 .default {
-    font-size: 1.4em;
-    margin: 2em 0;
-    font-weight: 300;
+  font-size: 1.5em;
+  margin: 1.2em 0;
+  font-weight: 100;
+  color: #FFFCEF;
 }
 
 .contact {
-    font-size: 3.5em;
+    font-size: 2.5em;
+color: #2D88F0;
 }
 
+.contact-1{
+  font-size: 5em;
+}
+
+.fa{
+  padding:0 0.5em;
+}
 footer {
     padding: 3em;
     margin-top: 10em;
@@ -111,10 +120,11 @@ AWARDS
 *******************************/
 
 #awards {
-    background-image: url(../img/bg-3.png);
+    background-image: url(../img/bg-5.png);
     background-size: cover;
     padding-top: 6em;
     padding-bottom: 0;
+    font-size: 1.2em;
 }
 /*******************************
 CONTACT
