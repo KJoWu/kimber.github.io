@@ -73,12 +73,24 @@ PORTFOLIO
     }
 }
 
-#skills{
-  color:#fff;
+#skills {
+    color: #fff;
 }
 
-#skill p{
-  font-size: 2em;
+.default {
+    font-size: 1.4em;
+    margin: 2em 0;
+    font-weight: 300;
+}
+
+.contact {
+    font-size: 3.5em;
+}
+
+footer {
+    padding: 3em;
+    margin-top: 10em;
+    background-color: rgba(0, 0, 0, 0.83);
 }
 /*******************************
 PROGRAMING 
@@ -88,18 +100,21 @@ PROGRAMING
     background: url(../img/bg1.png) 100% repeat;
     color: #fff;
     font-size: 1.2em;
-      font-weight: 200;
+    font-weight: 200;
 }
 
-#programming a{
-  color:#C2FF00;
+#programming a {
+    color: #C2FF00;
 }
 /*******************************
 AWARDS
 *******************************/
 
 #awards {
-    background-color: seagreen;
+    background-image: url(../img/bg-3.png);
+    background-size: cover;
+    padding-top: 6em;
+    padding-bottom: 0;
 }
 /*******************************
 CONTACT
