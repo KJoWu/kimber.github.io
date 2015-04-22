@@ -2,34 +2,33 @@ html,
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 section {
-  padding: 100px 0;
-  background-color: #F7F7F7;
+    padding: 100px 0;
+    background-color: #F7F7F7;
 }
 
-a:hover{
-  text-decoration: none;
+a:hover {
+    text-decoration: none;
 }
 /*******************************
 TOP
 *******************************/
 
 h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  padding: 10px 0.5em;
-  font-size: 7.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 10px 0.5em;
+    font-size: 7.5vw;
 }
 
 h3 {
-  font-family: 'Lato', sans-serif;
-  font-size: calc(100% + 1vw);
-  font-weight: lighter;
+    font-size: calc(100% + 1vw);
+    font-weight: lighter;
 }
 
 .header-content hr {
@@ -39,12 +38,9 @@ h3 {
 }
 
 .section-heading {
-  font-size: 3em;
-  /* font-family: 'Lato', sans-serif; */
-  font-weight: 300;
-  color: rgb(0, 149, 203);
+    font-size: 3em;
+    font-weight: 300;
 }
-
 
 header {
     position: relative;
@@ -60,57 +56,55 @@ header {
     -o-background-size: cover;
 }
 
-
-.strokeme{
-    text-shadow:
-    -1px -1px 0 #000,
-    0px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    0px 1px 0 #000,
-    1px 1px 0 #000;
+.strokeme {
+    text-shadow: -1px -1px 0 #000, 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .bg-primary {
-  background-color: #0095CB;
+    background-color: #0095CB;
 }
-
-
-
 /*******************************
 PORTFOLIO
 *******************************/
 
-
-
 @media (max-width: 600px) {
-  .col-lg-3.col-md-3.col-sm-4.col-xs-6{
-    width:100%;
-  }
+    .col-lg-3.col-md-3.col-sm-4.col-xs-6 {
+        width: 100%;
+    }
 }
 
+#skills{
+  color:#fff;
+}
 
+#skill p{
+  font-size: 2em;
+}
 /*******************************
 PROGRAMING 
 *******************************/
-#programming{
-      background: url(../img/bg1.png) 100% repeat;
 
+#programming {
+    background: url(../img/bg1.png) 100% repeat;
+    color: #fff;
+    font-size: 1.2em;
+      font-weight: 200;
 }
 
+#programming a{
+  color:#C2FF00;
+}
 /*******************************
 AWARDS
 *******************************/
-#awards{
-      background-color:seagreen;
 
+#awards {
+    background-color: seagreen;
 }
-
 /*******************************
 CONTACT
 *******************************/
-#contact{
-      background-color: black;
 
+#contact {
+    background-color: black;
 }
-
