@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--IMAGES
-
--->
 
 <head>
     <meta charset="utf-8">
@@ -17,40 +14,30 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,700italic' rel='stylesheet' type='text/css'>
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE  9]>
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--PRELOADER-->
-    <script src="js/pace.min.js"></script>
-    <link href="css/load.css" rel="stylesheet" />
-    <!--SLIDER-->
-    <!-- jQuery library (served from Google) -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script type="text/javascript">
-    var jQuery_1_9_1 = $.noConflict(true);
-    </script>
-    <!--SLIDER-->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
 </head>
 
 <body id="page-top">
+    <div class='loader'>
+        <div class='loader-container'>
+            <h3><b>Loading...</b></h3>
+            <div class='progress progress-striped active'>
+                <div class='progress-bar progress-bar-color' id='bar' role='progressbar' style='width: 0%;'></div>
+            </div>
+        </div>
+    </div>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- BURGER BAR-->
+            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -58,13 +45,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Kimberly Wu</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#skills">Resume</a>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
@@ -81,481 +71,228 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h2>Kimberly Wu</h2>
-                <h3>Illustrator | Programmer | Web Designer</h3>
+                <h1>Kimberly Wu</h1>
                 <hr>
-                <a class="page-scroll" href="#skills"><i class="contact-1 fa fa-angle-double-down"></i></a>
+                <p>Web Designer | Graphic Artist | Programmer</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
-    <!--
-    Intro
-    ======================================================================================== -->
-    <section class="bg-primary" id="skills">
+    <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h3 class="section-heading">Who am I?</h3>
+                    <h2 class="section-heading">Who am I?</h2>
                     <hr class="light">
-                    <p class="default"> I am a recent graduate of Bioinformatics at the University of Alberta. I have over 5 years of Photoshop experience and enjoy being engaged in projects involving UX design, creating scripts in Python and front end web development.</p>
-                    <!--  <a href="img/kim-resume.pdf" download class="btn btn-default btn-xl"><i class="fa fa-download"></i> Download CV</a>-->
+                    <p class="text-faded">I am a recent graduate of Bioinformatics at the University of Alberta. I have over 5 years of Photoshop experience and enjoy being engaged in projects involving UX design, creating scripts in Python and front end web development.</p>
+                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
     </section>
-    <!--
-    Portfolio
-    ======================================================================================== -->
-    <section id="portfolio">
+    <section id="services">
         <div class="container">
-            <h3 class="section-heading text-center">Graphic Design/Media Projects</h3>
-            <hr>
-            <!--KIAS
-////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#kiasModal" href="#kiasModal">
-                    <img class="img-responsive" src="img/kias.png" alt="">
-                </a>
-            </div>
-            <!-- KIAS MODAL -->
-            <div class="modal fade" id="kiasModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="kiasModalLabel">Kias Graphic Artist/Media Producer</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="kias-owl" class="owl-carousel">
-                                <div class="item">
-                                    <a href="https://www.youtube.com/watch?v=cRgB0sU_IpI" target="blank"><img src="img/kias-video.png" alt="Light"></a>
-                                    <h4>KIAS 2013: Tomorrow's Ideas Now Conference Video</h4> Developed the video for the Kule Institute of Advanced Study 2013 International Conference.
-                                </div>
-                                <div class="item">
-                                    <img src="img/kias-1.png" alt="kias-image">
-                                    <img src="img/kias-2.png" alt="kias-image">
-                                    <img src="img/kias-3.png" alt="kias-image">
-                                    <img src="img/kias-4.png" alt="kias-image">
-                                    <img src="img/kias-5.png" alt="kias-image">
-                                    <img src="img/kias-6.png" alt="kias-image">
-                                    <img src="img/kias-7.png" alt="kias-image">
-                                    <img src="img/kias-8.png" alt="kias-image">
-                                    <img src="img/kias-9.png" alt="kias-image">
-                                    <h4>Magazine Layout Designer</h4>
-                                    <p>Designed layout for “<i>Total Art: Research Into, Through, and For Performance: papers from the University of Alberta's Performing Research/Practicing Performance Spring 2013 intensive</i>” led by Dr. Natalie S. Loveless and funded by the Kule Institute for Advanced Study. </p>
-                                </div>
-                                <div class="item">
-                                    <img src="img/kias-10.png" alt="Light">
-                                    <h4>Button Designer</h4> Designed buttons used for various Kias Conferences
-                                </div>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 text-center ">
+                    <div class="service-box">
+                        <i class="fa fa-4x  fa-laptop wow bounceIn text-primary"></i>
+                        <h3>Programming/Web Development</h3>
+                        <p class="text-muted">Python, Java/Android, HTML CSS, SASS, Foundations, jQuery, Version Control.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-pencil wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Illustration</h3>
+                        <p class="text-muted">Adobe Photoshop, Adobe Illustrator, InDesign, Adobe Flash.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-video-camera wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Videography</h3>
+                        <p class="text-muted">Sony Vegas, Camtasia, Final Cut Pro X.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-lightbulb-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Illustration</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ratione dolorem quibusdam aliquid, porro itaque beatae iste adipisci optio, ut? Perferendis nemo debitis, suscipit autem ipsam ipsum necessitatibus voluptatum. Sapiente!</p>
                     </div>
                 </div>
             </div>
-            <!--ENGINEER
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#engineerModal" href="#">
-                    <img class="img-responsive" src="img/engineer.png" alt="">
-                </a>
-            </div>
-            <!-- ENGINEER MODAL -->
-            <div class="modal fade" id="engineerModal" tabindex="-1" role="dialog" aria-labelledby="engineerModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="engineerModalLabel">Engineering Students' Society Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="engineer-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <img src="img/eng-1.png" alt="engineering-newsletter">
-                                    <img src="img/eng-2.png" alt="engineering-newsletter">
-                                    <img src="img/eng-3.png" alt="engineering-newsletter">
-                                    <h4>Newsletter Layout Designer</h4>
-                                    <p>2014-2015. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--Science
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#scienceModal" href="#">
-                    <img class="img-responsive" src="img/science.png" alt="">
-                </a>
-            </div>
-            <!-- SCIENCE MODAL -->
-            <div class="modal fade" id="scienceModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="scienceModalLabel">Science Students' Society Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="science-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <a href="https://www.youtube.com/watch?v=75c2_TTHWYcimg" target="blank">
-                                        <img src="img/sci-vid.png" alt="Light"></a>
-                                    <h4>Interdepartmental Science Students' Society Rap Video</h4>
-                                    <p> Produced and edited the video for the Interdepartmental Science Students' Society which was featured in the 2014 Science Orientation at the University of Alberta.
-                                </div>
-                                <div class="item ">
-                                    <img src="img/sci-shirt.png" alt="t-shirt design">
-                                    <h4>Finding Science T-shirt</h4>
-                                    <p> Designed the official t-shirt used for University of Alberta's Science Week. 2015
-                                </div>
-                                <div class="item ">
-                                    <img src="img/sci-1.png" alt="science week promos">
-                                    <img src="img/sci-2.png" alt="science week promos">
-                                    <img src="img/sci-3.png" alt="science week promos">
-                                    <h4>Science Week Advertisement/Promotions</h4>
-                                    <p> Designed the posters and pamphlets for Science Week's "Finding Nemo" event. 2015.
-                                </div>
-                                <div class="item ">
-                                    <img src="img/a-1.png" alt="Light">
-                                    <img src="img/a-2.png" alt="Light">
-                                    <img src="img/a-3.png" alt="Light">
-                                    <img src="img/a-4.png" alt="Light">
-                                    <img src="img/a-5.png" alt="Light">
-                                    <img src="img/a-6.png" alt="Light">
-                                    <h4>T-shirt Designs</h4> Created potential designs for t-shirts to be used by the Student Faculty of Science at the University of Alberta.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--swac MODAL
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#swacModal" href="#">
-                    <img class="img-responsive" src="img/swac.png" alt="">
-                </a>
-            </div>
-            <!-- swac MODAL -->
-            <div class="modal fade" id="swacModal" tabindex="-1" role="dialog" aria-labelledby="swacModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="swacModalLabel">Club Related Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="swac-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <img src="img/wise-1.png" alt="advertisement">
-                                    <img src="img/wise-2.png" alt="advertisement">
-                                    <img src="img/wise-3.png" alt="advertisement">
-                                    <h4>Publicity Coordinator for UA-WiSE  </h4>
-                                    <h4>(Women in Science and Engineering)</h4> Organized and coordinated meetings and events which offered opportunities for undergraduates to broaden their scope of future careers.
-                                </div>
-                                <div class="item ">
-                                    <img src="img/can-1.png" alt="Light">
-                                    <img src="img/can-2.png" alt="Light">
-                                    <img src="img/can-3.png" alt="Light">
-                                    <h4>Marketing Director for Canadian Cancer Society, University of Alberta Chapter </h4> Promoter and designer for the awareness and eradication of cancer through the organization of events such as the 2nd Annual Cancer Symposium, Sprout a Stache and Pay it Forward for Cancer. Visualized and facilitated various methods of promotion and also contributed to the planning and management of events.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--SCHOOL MODAL
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#schoolModal" href="#">
-                    <img class="img-responsive" src="img/ainlay.png" alt="">
-                </a>
-            </div>
-            <!-- SCHOOL MODAL -->
-            <div class="modal fade" id="schoolModal" tabindex="-1" role="dialog" aria-labelledby="schoolModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="schoolModalLabel">Earlier Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="school-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <video width="550" height="400" controls>
-                                        <source src="img/fears.mp4" type="video/mp4">
-                                    </video>
-                                    <h4>25 Fears (in Conjunction with the Visual Arts IB Portfolio)</h4>
-                                    <p> Flash animation which brings to life the characteristics of 25 fears, phobias and nightmares. 2011</p>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/school-1.png" alt="Light">
-                                    <h4>Crestwood School Mural</h4>
-                                    <p> Designed and painted an 8' x 10' mural for Crestwood School </p>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/school-2.png" alt="Light">
-                                    <h4>Link Crew Harry Ainlay High School Orientation Executive</h4>
-                                    Managed the overall production of the official school t-shirt for grade 10 orientation.  Emphasis was placed on the management of shirt inventory and effective communication with the t-shirt production company. 
-                                </div>
-                                <div class="item ">
-                                    <img src="img/art-1.png" alt="Light">
-                                    <img src="img/art-2.png" alt="Light">
-                                    <img src="img/art-3.png" alt="Light">
-                                    <img src="img/art-4.png" alt="Light">
-                                    <img src="img/art-7.png" alt="Light">
-                                    <img src="img/art-8.png" alt="Light">
-                                    <img src="img/art-5.png" alt="Light">
-                                    <img src="img/art-6.png" alt="Light">
-                                    <h4>Visual Arts IB Portfolio</h4> "The theme of my art mirrors my imagination and outlook on society’s norms, culture and most importantly society’s perspective on images and objects. Within my pieces, I attempt to create art that explores the lights of both humor and darkness. I believe art should have the ability to coexist within the space of the viewers as opposed to its own wall; that is my goal in creating pieces and will be for the continuing years to come." 2011.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--RESARCH MODAL
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#researchModal" href="#">
-                    <img class="img-responsive" src="img/research.png" alt="">
-                </a>
-            </div>
-            <!-- research MODAL -->
-            <div class="modal fade" id="researchModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="researchModalLabel">Research Related Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="research-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <img src="img/research-1.png" alt="Light">
-                                    <h4>Research Illustration </h4>
-                                    <p>Figure 1 on “<i>Pathologic basis of antibody-mediated organ transplant rejection: from pathogenesis to diagnosis</i>” by Amani Joudeh, Khouloud Ahmad Saliba, Kaila A. Topping, and Banu Sis. </p>
-                                    <a href="http://www.ncbi.nlm.nih.gov/pubmed/23838653" target="blank">
-                                        <p> <b>View Here </b> </p>
-                                    </a>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/research-2.png" alt="Light">
-                                    <img src="img/lice-1.png" alt="Light">
-                                    <img src="img/lice-2.png" alt="Light">
-                                    <img src="img/lice-3.png" alt="Light">
-                                    <h4>Digital Image Processing of Feather Lice from Albertan Birds </h4>
-                                    <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
-                                    <a href="img/poster.png" download>
-                                        <b> DOWNLOAD RESEARCH POSTER </b>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--ADDITIONAL MODAL
-////////////////////////////////////////////////////////////////////////////////////////////////////
-        -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#additionalModal" href="#">
-                    <img class="img-responsive" src="img/additional.png" alt="">
-                </a>
-            </div>
-            <!-- personal MODAL -->
-            <div class="modal fade" id="additionalModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="additionalModalLabel">Additional Projects</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="additional-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <img src="img/add-1.png" alt="Light">
-                                    <div class="item ">
-                                        <video width="580" height="400" controls>
-                                            <source src="img/movie.mp4" type="video/mp4">
-                                        </video>
-                                        <h4>Voices of Rosemary: A Neverwinter Nights Game </h4>
-                                        <p> Lead Designer of a game made using the Neverwinter Nights Engine. In charge of design, movie editing, scripting, level design and storyline. </p>
-                                        <p> Game nomininated for Best Storyline/Art. <a href="https://sites.google.com/a/ualberta.ca/cmput250award2015/nominees" target="blank"><b> NOMINATIONS</b>  </p></a>
-                                    </div>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/add-2.png" alt="Light">
-                                    <h4>StoryHoard: Android Application</h4>
-                                    <p> Front end developer for StoryHoard, a story making app </p>
-                                    <a href="https://www.youtube.com/watch?v=3J25JH9TEEo" target="blank"> <b> Watch Demo </b></a>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/add.png" alt="Light">
-                                    <h4>Note Taking App</h4>
-                                    <p> SSDS is a website that provides support for students with disabilities. Currently there is a gap between accessibility and usability for both people utilizing the service and people providing the service. What we would like to do is provide an interface that is more usable and accessible </p>
-                                    <a href="http://ssds.meteor.com/dashboard.html" target="blank"> <b> View Demo </b></a>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/add-3.png" alt="Light">
-                                    <h4>Porphyrius: Draw My Life</h4>
-                                    <p>Classics 305 Personal Diary Project: Drew/edited the story of Porphyrius, the greatest Charioteer of Ancient Rome.</p>
-                                    <p><a href="https://www.youtube.com/watch?v=N4UTFSjxV9U" target="blank"><b> Watch Part 1 </b></a></p>
-                                    <p><a href="https://www.youtube.com/watch?v=i4pRkQrjfSU" target="blank"><b> Watch Part 2 </b></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--PERSONAL MODAL
-       ////////////////////////////////////////////////////////////////////////////////////////////////////
- -->
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
-                <a class="thumbnail" data-toggle="modal" data-target="#personalModal" href="#">
-                    <img class="img-responsive" src="img/personal.png" alt="">
-                </a>
-            </div>
-            <!-- PERSONAL MODAL -->
-            <div class="modal fade" id="personalModal" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="personalModalLabel">Personal Work</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div id="personal-owl" class="owl-carousel">
-                                <div class="item ">
-                                    <img src="img/shirt-2.png" alt="Light">
-                                    <h4> Kids Help Phone T-Shirt Design Winner </h4>
-                                    <p>University of Alberta Chapter</p>
-                                </div>
-                                <div class="item ">
-                                    <img src="img/more-1.png" alt="Light">
-                                </div>
-                                <div class="item ">
-                                    <img src="img/more-2.png" alt="Light">
-                                    <img src="img/more-3.png" alt="Light">
-                                </div>
-                                <div class="item ">
-                                    <img src="img/more-4.png" alt="Light">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
-    <!--
-    Contact
-    ======================================================================================== -->
-    <section id="programming">
-        <div class="container">
-            <h3 class="section-heading text-center">  Programming Related Work</h3>
-            <hr class="light">
-            <p>Computer Programming and Web Development: Python, Java/Android, HTML CSS, SASS, Foundations, jQuery, Version Control.</p>
-            <p>Level designer, script developer for <a href="https://sites.google.com/a/ualberta.ca/cmput250award2015/nominees" target="blank"> The Voices of Rosemary </p></a>
-                <p>Front end developer for <a href="https://www.youtube.com/watch?v=3J25JH9TEEo" target="blank">  Storyhoard (Android Application)</a>
-                    <p> Front end developer for "Notetaking that Works": <a href="http://ssds.meteor.com/" target="blank"> Note Taking App (Demo) </p></a>
-                        <p>Front end developer for CODE Hackathon 2014: <a href="https://www.youtube.com/watch?v=9Wo2iGwhUVo" target="blank"> Forward, the Application </p></a>
-                            <p>Data Mining for <a href="http://www.drugbank.ca/" target="blank"> DrugBank </p></a>
-                                <p>Script Developer/Web Designer: <a href="http://cultr.business.ualberta.ca/" target="blank"> Cultr Site (in development)</a></p>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Web Developer/Designer
+                                </div>
+                                <div class="project-name">
+                                    Doctors Plus Website
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Web Designer/Illustrator
+                                </div>
+                                <div class="project-name">
+                                    Cultr Website
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Front End Developer
+                                </div>
+                                <div class="project-name">
+                                    Mobile Apps/Games
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Illustrator/Layout Designer
+                                </div>
+                                <div class="project-name">
+                                    Newsletters/Articles
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Illustrator
+                                </div>
+                                <div class="project-name">
+                                    Promotional Work
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Illustrator
+                                </div>
+                                <div class="project-name">
+                                    T-shirts
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/7.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Graphic Illustrator
+                                </div>
+                                <div class="project-name">
+                                    Research Projects
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/8.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Videographer/Animator
+                                </div>
+                                <div class="project-name">
+                                    Films/Promotional Videos
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#" class="portfolio-box">
+                        <img src="img/portfolio/9.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Traditional Artist
+                                </div>
+                                <div class="project-name">
+                                    Painting/Sketching/Sculpting
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
     <section id="awards">
         <div class="container">
-            <h3 class="section-heading text-center">  Recognition/Awards</h3>
-            <hr class="light">
+            <i class="fa fa-trophy"></i>
             <p>Nominations for Best Story/Design: Voices of Rosemary 2015 </p>
             <p>T-shirt Design Winner: Kids Help Phone Student Committee – Edmonton 2013</p>
             <p>Outstanding Volunteer Certificate: Grandview Capital Care 2012</p>
             <p>Recipient of the Maya Reinking Art Award 2010</p>
             <p>District of Edmonton Art Award Winner 2010</p>
-            <p>Team Alberta Chess T-shirt: 2nd place in design 2007</p>
-            <p>3rd Place Canada Day Poster Challenge 2006</p>
+            <p>Team Alberta Chess T-shirt: 2nd place in design 200
         </div>
-        <footer id="contact">
-            <div class="container text-center">
-                <p class="contact-1">Interested? Drop a line!</p>
-                <p>
-                    <a href="https://github.com/Kimber" target="blank"> <i class="fa fa-github-alt"></i></a>
-                    <a href="https://www.linkedin.com/pub/kimberly-wu/a8/297/69a" target="blank"><i class="fa fa-linkedin"></i></a></p>
-                kwu1@ualberta.ca
-                <!--<i class="fa fa-paper-plane"></i>-->
-            </div>
-        </footer>
     </section>
-    <!-- Frontpage Demo -->
-    <script>
-    $(document).ready(function($) {
-
-        $("#kias-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#engineer-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#swac-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#science-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-
-        });
-        $("#additional-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-
-        });
-
-        $("#school-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-
-
-        $("#research-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-
-        $("#personal-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-    });
-    </script>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa  fa-github-alt fa-3x wow bounceIn"></i>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+        <script src="js/load.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
