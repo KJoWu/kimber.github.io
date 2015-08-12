@@ -243,6 +243,13 @@ header .header-content .header-content-inner p {
     margin-bottom: 0;
 }
 
+
+.service-box.main{
+    background-color: rgb(245, 223, 202);
+        padding: 1em;
+    border-radius: 3em;
+}
+
 #services {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(72, 95, 26, 0) 100%), url(../img/service.png);
     background-position: center;
@@ -468,7 +475,7 @@ img::-moz-selection {
 }
 
 #awards {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(72, 95, 26, 0) 100%), url(../img/awards.png);
+background-image: linear-gradient(to bottom, rgba(103, 74, 56, 0.84) 0%, rgba(0, 0, 0, 0.51) 100%), url(../img/awards.png);
     height: auto;
     background-position: center;
     -webkit-background-size: cover;
@@ -477,6 +484,11 @@ img::-moz-selection {
     -o-background-size: cover;
         background-attachment: fixed;
 
+}
+
+#awards .side-1{
+    font-size: 4em;
+    color:red;
 }
 
 #contact {

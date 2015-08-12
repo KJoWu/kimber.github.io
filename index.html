@@ -71,9 +71,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Kimberly Wu</h1>
+                <h1 class="wow fadeInUp">Kimberly Wu</h1>
                 <hr>
-                <p>Web Designer | Graphic Artist | Programmer</p>
+                <p class="wow fadeIn">Web Designer | Graphic Artist | Programmer</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -84,8 +84,8 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Who am I?</h2>
                     <hr class="light">
-                    <p class="text-faded">I am a recent graduate of Bioinformatics at the University of Alberta. I have over 5 years of Photoshop experience and enjoy being engaged in projects involving UX design, creating scripts in Python and front end web development.</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <p class="text-faded">I am a recent graduate of Bioinformatics at the University of Alberta. I have over 5 years of experience in Photoshop and enjoy being engaged in projects involving UX design, creating scripts in Python and front end web development.</p>
+                    <!--<a href="#" class="btn btn-default btn-xl">Get Started!</a>-->
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 text-center">
-                    <div class="service-box">
+                    <div class="service-box main wow fadeInUp">
                         <i class="fa fa-4x fa-lightbulb-o wow bounceIn text-primary" data-wow-delay=".1s"></i>
                         <h3>Illustration</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ratione dolorem quibusdam aliquid, porro itaque beatae iste adipisci optio, ut? Perferendis nemo debitis, suscipit autem ipsam ipsum necessitatibus voluptatum. Sapiente!</p>
@@ -263,13 +263,19 @@
     </section>
     <section id="awards">
         <div class="container">
-            <i class="fa fa-trophy"></i>
-            <p>Nominations for Best Story/Design: Voices of Rosemary 2015 </p>
-            <p>T-shirt Design Winner: Kids Help Phone Student Committee – Edmonton 2013</p>
-            <p>Outstanding Volunteer Certificate: Grandview Capital Care 2012</p>
-            <p>Recipient of the Maya Reinking Art Award 2010</p>
-            <p>District of Edmonton Art Award Winner 2010</p>
-            <p>Team Alberta Chess T-shirt: 2nd place in design 200
+            <div class="row">
+                <div class="col-md-4 text-center side-1">
+                    <!--<i class="fa fa-trophy"></i> -->Awards
+                </div>
+                <div class="col-md-6 text-left">
+                    <p>Nominations for Best Story/Design: Voices of Rosemary 2015 </p>
+                    <p>T-shirt Design Winner: Kids Help Phone Student Committee – Edmonton 2013</p>
+                    <p>Outstanding Volunteer Certificate: Grandview Capital Care 2012</p>
+                    <p>Recipient of the Maya Reinking Art Award 2010</p>
+                    <p>District of Edmonton Art Award Winner 2010</p>
+                    <p>Team Alberta Chess T-shirt: 2nd place in design 200
+                </div>
+            </div>
         </div>
     </section>
     <section id="contact">
@@ -281,7 +287,7 @@
                     <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa  fa-github-alt fa-3x wow bounceIn"></i>
+                    <i class="fa fa-4x fa-github-alt wow bounceIn"></i>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i>
@@ -291,8 +297,7 @@
     </section>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-        <script src="js/load.js"></script>
-
+    <script src="js/load.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
