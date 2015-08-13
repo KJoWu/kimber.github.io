@@ -53,7 +53,7 @@ p {
 
 .bg-primary {
     background-color: #33A2C3;
-    background-image: linear-gradient(to bottom, rgba(247, 169, 107, 0.35) 0%, rgba(0, 0, 0, 0.75) 74%), url(../img/who.jpg);
+    background-image: linear-gradient(to bottom, rgba(90, 54, 25, 0.79) 0%, rgba(0, 0, 0, 0.75) 74%), url(../img/who.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -480,8 +480,8 @@ img::-moz-selection {
 }
 
 #awards {
-    background-image: linear-gradient(to bottom, rgba(68, 56, 48, 0.67) 0%, rgba(0, 0, 0, 0.85) 100%), url(../img/awards.jpg);
-    height: auto;
+    background-image: linear-gradient(to bottom, rgba(29, 24, 21, 0.64) 0%, rgba(0, 0, 0, 0.85) 100%), url(../img/awards.jpg);
+        height: auto;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -492,7 +492,13 @@ img::-moz-selection {
 
 #awards .side-1 {
     font-size: 4em;
-    color: red;
+    color: #FFB027;
+}
+
+#awards p {
+    color: #F7C369;
+    font-family: helvetica;
+    font-size: 18px;
 }
 
 #contact {
@@ -525,15 +531,11 @@ img::-moz-selection {
     margin: auto;
     text-align: center;
 }
- img{
-    width:100%;
- }
+
+img {
+    width: 100%;
+}
+
 body {
     webkit-tap-highlight-color: #222;
 }
-
-
-
-
-
-
