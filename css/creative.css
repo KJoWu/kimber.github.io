@@ -481,7 +481,7 @@ img::-moz-selection {
 
 #awards {
     background-image: linear-gradient(to bottom, rgba(29, 24, 21, 0.64) 0%, rgba(0, 0, 0, 0.85) 100%), url(../img/awards.jpg);
-        height: auto;
+    height: auto;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -534,6 +534,10 @@ img::-moz-selection {
 
 img {
     width: 100%;
+}
+
+a:hover {
+    text-decoration: none
 }
 
 body {
