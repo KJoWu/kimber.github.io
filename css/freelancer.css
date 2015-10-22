@@ -60,7 +60,7 @@ header .intro-text .name {
     display: block;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 700;
 }
 
@@ -95,6 +95,8 @@ header .intro-text .skills {
         -moz-transition: all .3s;
         transition: all .3s;
     }
+
+    
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
     }
@@ -489,4 +491,18 @@ header .intro-text .skills {
     /* font-family: "Lato"; */
     font-size: 2em;
     font-weight: 800;
+}
+
+a {
+    color: #FFC74A;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a:hover{
+text-decoration: none;
+}
+a, a:hover, a:focus, a:active, a.active {
+    outline: 0;
+    color: #FFFFFF;
 }
