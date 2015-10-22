@@ -292,6 +292,7 @@ form .row:first-child .floating-label-form-group {
 
 footer {
     color: #fff;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 footer h3 {
@@ -327,6 +328,11 @@ footer .footer-below {
 .btn:active,
 .btn.active {
     outline: 0;
+}
+
+header .intro-text .skills {
+    font-size: 1.5em;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .scroll-top {
@@ -475,4 +481,12 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     padding-top: 1em;
+}
+
+@media (min-width: 768px)
+header .intro-text .skills {
+    font-size: 1.75em;
+    /* font-family: "Lato"; */
+    font-size: 2em;
+    font-weight: 800;
 }
