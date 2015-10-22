@@ -1,72 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Kimberly Wu's Portfolio. Graphic Designer, Web Programmer, Videographer. 5 years of experience in Photoshop. Aspiring UX Developer.">
-    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css">
     <title>Kimberly Wu | Portfolio</title>
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Resource style -->
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <!--SLIDER-->
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <link href="css/extra.scss" rel="stylesheet">
 </head>
 
-<body id="page-top">
-    <div class='loader'>
-        <div class='loader-container'>
-            <h3><b>Loading...</b></h3>
-            <div class='progress progress-striped active'>
-                <div class='progress-bar progress-bar-color' id='bar' role='progressbar' style='width: 0%;'></div>
-            </div>
-        </div>
-    </div>
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+<body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Kimberly Wu</a>
+                <a class="navbar-brand" href="#page-top">Kimberly Wu</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                    <li class="hidden">
+                        <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                    <li class="page-scroll">
+                        <a href="#skills">Skills</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Portfolio</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,567 +64,346 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+    <!-- Header -->
     <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 class="wow fadeInUp">Kimberly Wu</h1>
-                <hr>
-                <p class="wow fadeIn">Web Designer | Graphic Artist | Programmer</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name">Kimberly Wu</span>
+                        <span class="skills">Web Developer - Graphic Artist</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <section class="bg-primary" id="about">
+    <section id="skills">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center wow fadeInUp">
-                    <h2 class="section-heading">Who am I?</h2>
-                    <hr class="light">
-                    <p class="text-faded">I am a recent graduate of Bioinformatics at the University of Alberta. I have over 5 years of experience in Photoshop and enjoy being engaged in projects involving UX design, creating scripts in Python and front end web development.</p>
-                    <!--<a href="#" class="btn btn-default btn-xl">Get Started!</a>-->
+                <div class="col-lg-12 text-center">
+                    <h2>Technical Skills</h2>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="services">
-        <div class="container">
             <div class="row">
-                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center">
-                    <i class="fa fa-4x fa-pencil wow fadeInUp text-primary" data-wow-delay=".1s"></i>
+                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center" style="visibility: visible; animation-name: fadeInUp;">
+                    <i class="fa fa-4x fa-pencil wow fadeInUp text-primary" data-wow-delay=".1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;"></i>
                     <h3>Illustration/Design</h3>
                     <p class="text-muted">Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Adobe Flash.</p>
                 </div>
-                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center">
-                    <i class="fa fa-4x  fa-laptop wow fadeInUp text-primary"></i>
+                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center" style="visibility: visible; animation-name: fadeInUp;">
+                    <i class="fa fa-4x  fa-laptop wow fadeInUp text-primary" style="visibility: visible; animation-name: fadeInUp;"></i>
                     <h3>Programming/Web Development</h3>
-                    <p class="text-muted">Python, Ruby, Javascript, Java, Android, HTML, CSS, SASS, Foundations, Boostraps, PHP, jQuery, Node.js, Wordpress, Jekyll, MSQL, Flask, Version Control.</p>
+                    <p class="text-muted">HTML, CSS, Sass/Compass, Javascript, jQuery, Jekyll, Bootstrap/Foundations, Python, Ruby, Android, MySQL, Version Control.</p>
                 </div>
-                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center">
-                    <i class="fa fa-4x fa-video-camera wow fadeInUp text-primary" data-wow-delay=".2s"></i>
+                <div class="service-box  wow fadeInUp col-lg-4 col-sm-4 text-center" style="visibility: visible; animation-name: fadeInUp;">
+                    <i class="fa fa-4x fa-video-camera wow fadeInUp text-primary" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;"></i>
                     <h3>Videography</h3>
                     <p class="text-muted">Sony Vegas, Camtasia, Final Cut Pro X.</p>
                 </div>
-                <!-- <div class="col-lg-6 col-sm-6 text-center">
-                    <div class="service-box main wow fadeInUp">
-                        <i class="fa fa-4x fa-lightbulb-o wow fadeInUp text-primary" data-wow-delay=".1s"></i>
-                        <h3>Your Ideas Come First</h3>
-                        <p class="text-muted">As an artist and web developer, I have developed an extensive skill set. It is my hope that your ideas will be brought to life in the medium you desire.</p>
+            </div>
+    </section>
+    <main class="cd-main-content">
+        <div class="container" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="cd-tab-filter-wrapper">
+                <div class="cd-tab-filter">
+                    <ul class="cd-filters">
+                        <li class="placeholder">
+                            <a data-type="all" href="#0">All</a>
+                            <!-- selected option on mobile -->
+                        </li>
+                        <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                        <li class="filter" data-filter=".web"><a href="#0" data-type="web">Web Apps/Games</a></li>
+                        <li class="filter" data-filter=".video"><a href="#0" data-type="video">Videography</a></li>
+                        <li class="filter" data-filter=".shirt"><a href="#0" data-type="shirt">Graphic Tees</a></li>
+                        <li class="filter" data-filter=".layout"><a href="#0" data-type="layout">Editorials</a></li>
+                        <li class="filter" data-filter=".promo"><a href="#0" data-type="promo">Promotional</a></li>
+                        <li class="filter" data-filter=".pub"><a href="#0" data-type="pub">Published</a></li>
+                        <li class="filter" data-filter=".trad"><a href="#0" data-type="trad">Traditional</a></li>
+                    </ul>
+                    <!-- cd-filters -->
+                </div>
+                <!-- cd-tab-filter -->
+            </div>
+            <!-- cd-tab-filter-wrapper -->
+            <section class="cd-gallery">
+                <ul>
+                    <li class="mix web">
+                        <a data-toggle="modal" href="#app-5"><img src="img/app-5.jpg" alt="web"></a>
+                    </li>
+                    <li class="mix shirt"><img src="img/shirt-9.jpg" alt="shirt"></li>
+                    <li class="mix web">
+                        <a data-toggle="modal" href="#app-4"><img src="img/app-4.jpg" alt="web"></a>
+                    </li>
+                    <li class="mix layout"><img src="img/layout-3.jpg" alt="layout"></li>
+                    <li class="mix web">
+                        <a data-toggle="modal" href="#app-1"><img src="img/app-1.jpg" alt="web"></a>
+                    </li>
+                    <li class="mix web">
+                        <a data-toggle="modal" href="#app-2"><img src="img/app-2.jpg" alt="web"></a>
+                    </li>
+                    <li class="mix web"><img src="img/app-3.jpg" alt="web"></li>
+                    <li class="mix shirt"><img src="img/shirt-1.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-2.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-3.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-4.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-5.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-6.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-7.jpg" alt="shirt"></li>
+                    <li class="mix shirt"><img src="img/shirt-8.jpg" alt="shirt"></li>
+                    <li class="mix promo"><img src="img/promo-1.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-2.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-3.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-4.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-5.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-6.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-7.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-8.jpg" alt="promotional work"></li>
+                    <li class="mix promo"><img src="img/promo-9.jpg" alt="promotional work"></li>
+                    <li class="mix layout"><img src="img/layout-1.jpg" alt="layout"></li>
+                    <li class="mix layout"><img src="img/layout-2.jpg" alt="layout"></li>
+                    <li class="mix layout"><img src="img/layout-4.jpg" alt="layout"></li>
+                    <li class="mix layout"><img src="img/layout-5.jpg" alt="layout"></li>
+                    <li class="mix layout"><img src="img/layout-6.jpg" alt="layout"></li>
+                    <!--
+                <li class="mix layout"><img src="img/layout-7.jpg" alt="layout"></li>
+            -->
+                    <li class="mix layout"><img src="img/layout-8.jpg" alt="layout"></li>
+                    <li class="mix layout"><img src="img/layout-9.jpg" alt="layout"></li>
+                    <li class="mix video">
+                        <a data-toggle="modal" href="#vid-2"><img src="img/vid-2.jpg" alt="video"></a>
+                    </li>
+                    <li class="mix video">
+                        <a data-toggle="modal" href="#vid-3"><img src="img/vid-3.jpg" alt="video"></a>
+                    </li>
+                    <li class="mix video">
+                        <a data-toggle="modal" href="#vid-1"><img src="img/vid-1.jpg" alt="video"></a>
+                    </li>
+                    <li class="mix pub">
+                        <a data-toggle="modal" href="#pub-1"><img src="img/pub-1.jpg" alt="published"></a>
+                    </li>
+                    <li class="mix pub">
+                        <a data-toggle="modal" href="#pub-2"><img src="img/pub-2.jpg" alt="published"></a>
+                    </li>
+                    <li class="mix pub"><img src="img/pub-3.jpg" alt="published"></li>
+                    <li class="mix pub"><img src="img/pub-4.jpg" alt="published"></li>
+                    <!--<li class="mix pub"><img src="img/pub-5.jpg" alt="published"></li>-->
+                    <li class="mix trad"><img src="img/trad-1.jpg" alt="traditiona;"></li>
+                    <li class="mix trad"><img src="img/trad-2.jpg" alt="traditiona;"></li>
+                    <li class="mix trad">
+                        <a data-toggle="modal" href="#trad-3"><img src="img/trad-3.jpg" alt="traditiona;"></a>
+                    </li>
+                </ul>
+                <div class="cd-fail-message">No results found</div>
+            </section>
+            <!-- cd-gallery -->
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col text-center">
+                        <h3>Interested? Drop a Line!</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/pub/kimberly-wu/a8/297/69a" target="blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/Kimber" target="blank" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                            </div>
-
-            -->
             </div>
-    </section>
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#1">
-                        <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Web Developer/Designer
-                                </div>
-                                <div class="project-name">
-                                    Doctors Plus Website
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#2">
-                        <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Web Designer/Illustrator
-                                </div>
-                                <div class="project-name">
-                                    Cultr Website
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#3">
-                        <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Front End Developer
-                                </div>
-                                <div class="project-name">
-                                    Mobile Apps/Games
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#4">
-                        <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Graphic Illustrator/Layout Designer
-                                </div>
-                                <div class="project-name">
-                                    Newsletters/Articles
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#5">
-                        <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Graphic Illustrator
-                                </div>
-                                <div class="project-name">
-                                    Promotional Work
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#6">
-                        <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Graphic Illustrator
-                                </div>
-                                <div class="project-name">
-                                    T-shirts
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#7">
-                        <img src="img/portfolio/7.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Graphic Illustrator
-                                </div>
-                                <div class="project-name">
-                                    Research Projects
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#8">
-                        <img src="img/portfolio/8.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Videographer/Animator
-                                </div>
-                                <div class="project-name">
-                                    Films/Promotional Videos
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box" data-toggle="modal" data-target="#9">
-                        <img src="img/portfolio/9.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Traditional Artist
-                                </div>
-                                <div class="project-name">
-                                    Painting/Sketching
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Kimberly Wu 2015 &copy;
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="awards">
-        <div class="container">
-            <div class="row text-center">
-                <h1>Awards</h1>
-                    <p>Nominations for Best Story/Design: Voices of Rosemary 2015 </p>
-                    <p>T-shirt Design Winner: Kids Help Phone Student Committee – Edmonton 2013</p>
-                    <p>Outstanding Volunteer Certificate: Grandview Capital Care 2012</p>
-                    <p>Recipient of the Maya Reinking Art Award 2010</p>
-                    <p>District of Edmonton Art Award Winner 2010</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Interested? Drop a line!</h2>
-                    <hr class="primary">
-                    <p>I'm always ready for new exciting projects.</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <a href="https://github.com/Kimber" target="blank"><i class="fa fa-4x fa-github-alt wow bounceIn"></i></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="https://www.linkedin.com/pub/kimberly-wu/a8/297/69a" target="blank"><i class="fa fa-linkedin fa-3x wow bounceIn" data-wow-delay=".1s"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--MODAL BOXES-->
-    <div class="modal fade" id="1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Doctors Plus Website</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/portfolio/1.jpg" alt="Light">
-                    <h4>Doctors Plus </h4>
-                    <p> Developer and Designer of Doctors Plus Website</p>
-                    <a href="http://www.doctorsplusmed.com/" target="blank">
-                        <p>View Site</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
+        <!-- MODALS -->
+        <div class="modal fade" id="app-5">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="personalModalLabel">Cultr Toolkit Website</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Doctors Plus: Developer and Designer</h4>
                     </div>
                     <div class="modal-body">
-                        <img src="img/portfolio/2.jpg" alt="Light">
-                        <h4>Cultr Toolkit Site </h4>
-                        <p> Front End Developer of Website</p>
-                        <a href="http://cultr.business.ualberta.ca/" target="blank">
-                            <p>View Site (Still in Development)</p>
+                        <img src="img/mod-5.jpg" alt="Light">
+                        <p>
+                            <button type="submit" class="btn btn-primary" data-dismiss="modal">View Website</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="app-4">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Cultr: Designer/Python Developer</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-4.jpg" alt="Light">
+                        <p>
+                            <button type="submit" class="btn btn-primary" data-dismiss="modal">View Website</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="app-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Forward: The Application</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-1.jpg" alt="Light">
+                        <p>
+                            <button type="submit" class="btn btn-primary" data-dismiss="modal">View Demo</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="app-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">StoryHoard: A Story Sharing App</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-2.jpg" alt="Light">
+                        <p>
+                            <button type="submit" class="btn btn-primary" data-dismiss="modal">View Demo</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="trad-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Crestwood School Mural</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-6.jpg" alt="Light">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="pub-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">
+                            <h4>Research Illustration </h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-11.jpg" alt="Light">
+                        <p>Figure 1 on “<i>Pathologic basis of antibody-mediated organ transplant rejection: from pathogenesis to diagnosis</i>” by Amani Joudeh, Khouloud Ahmad Saliba, Kaila A. Topping, and Banu Sis. </p>
+                        <a href="http://www.ncbi.nlm.nih.gov/pubmed/23838653" target="blank">
+                            <p> <b>View Here </b> </p>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- SCIENCE MODAL -->
-    <div class="modal fade" id="3" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Mobile App/Game Development</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="game-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/3-a.jpg" alt="Light">
-                            <h4>Voice of Rosemary</h4>
-                            <p> Lead Designer of a game made using the Neverwinter Nights Engine. In charge of design, movie editing, scripting, level design and storyline. </p>
-                            <p> Game nominimated for Best Storyline/Art. <a href="https://sites.google.com/a/ualberta.ca/cmput250award2015/nominees" target="blank"><b> NOMINATIONS</b>  </p></a>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/3-b.jpg" alt="Light">
-                            <h4>StoryHoard: Android Application</h4>
-                            <p>Front end developer for <a href="https://www.youtube.com/watch?v=3J25JH9TEEo" target="blank">  Storyhoard (Android Application)</a></p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/3-c.jpg" alt="Light">
-                            <h4>Forward, the Application</h4>
-                            <p>
-                                <p>Front end developer for CODE Hackathon 2014: <a href="https://www.youtube.com/watch?v=9Wo2iGwhUVo" target="blank"> Forward, the Application </p></a>
-                        </div>
+        <div class="modal fade" id="pub-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Digital Image Processing of Feather Lice from Albertan Birds</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/mod-7.jpg" alt="Light">
+                        <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="4" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Newsletters/Articles</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="newsletter-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/4-a1.jpg" alt="Light">
-                            <img src="img/portfolio/4-a2.jpg" alt="Light">
-                            <img src="img/portfolio/4-a3.jpg" alt="Light">
-                            <img src="img/portfolio/4-a4.jpg" alt="Light">
-                            <img src="img/portfolio/4-a5.jpg" alt="Light">
-                            <img src="img/portfolio/4-a6.jpg" alt="Light">
-                            <img src="img/portfolio/4-a7.jpg" alt="Light">
-                            <img src="img/portfolio/4-a8.jpg" alt="Light">
-                            <img src="img/portfolio/4-a9.jpg" alt="Light">
-                            <h4>Magazine Layout Designer</h4>
-                            <p>Designed layout for “<i>Total Art: Research Into, Through, and For Performance: papers from the University of Alberta's Performing Research/Practicing Performance Spring 2013 intensive</i>” led by Dr. Natalie S. Loveless and funded by the Kule Institute for Advanced Study. </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/eng-1.jpg" alt="Light">
-                            <img src="img/portfolio/eng-2.jpg" alt="Light">
-                            <img src="img/portfolio/eng-3.jpg" alt="Light">
-                            <h4>Newsletter Layout Designer</h4>
-                            <p>2014-2015. </p>
-                        </div>
+        <div class="modal fade" id="vid-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Digital Image Processing of Feather Lice from Albertan Birds</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/vid-1.jpg" alt="Light">
+                        <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="5" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Promotional Work</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="poster-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/5-a1.jpg" alt="Light">
-                            <img src="img/portfolio/5-a2.jpg" alt="Light">
-                            <h4>Publicity Coordinator for UA-WiSE  </h4>
-                            <p>Designed promotional material for UA-Wise (Women in Science and Engineering) for events.
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/5-b1.jpg" alt="Light">
-                            <img src="img/portfolio/5-b2.jpg" alt="Light">
-                            <img src="img/portfolio/5-b3.jpg" alt="Light">
-                            <h4>Science Week Advertisement/Promotions</h4>
-                            <p> Designed the posters and pamphlets for Science Week's "Finding Science" event. 2015.
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/5-c1.jpg" alt="Light">
-                            <img src="img/portfolio/5-c2.jpg" alt="Light">
-                            <img src="img/portfolio/5-c3.jpg" alt="Light">
-                            <img src="img/portfolio/5-c4.jpg" alt="Light">
-                            <h4>Marketing Director for Canadian Cancer Society, University of Alberta Chapter </h4>
-                            <p> Designed posters and pamphlets for events hosted by University of Alberta chapter of the Canadian Cancer Society.
-                        </div>
+        <div class="modal fade" id="vid-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Digital Image Processing of Feather Lice from Albertan Birds</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/vid-2.jpg" alt="Light">
+                        <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="6" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Graphic T-shirt Designs</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="shirt-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/6-a1.jpg" alt="Light">
-                            <h4>"Finding Science" Design</h4>
-                            <p>Desgined the official Science Week t-shirt for the University of Alberta's Faculty of Science. </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/6-b1.jpg" alt="Light">
-                            <h4>Harry Ainlay Orientation Link Crew</h3>
-                            <p> Executive Committee member of Harry Ainlay's High School orientation. Designed the official t-shirt for the Harry Ainlay Orientation </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/6-c1.jpg" alt="Light">
-                            <img src="img/portfolio/6-c2.jpg" alt="Light">
-                            <img src="img/portfolio/6-c3.jpg" alt="Light">
-                            <img src="img/portfolio/6-c4.jpg" alt="Light">
-                            <img src="img/portfolio/6-c5.jpg" alt="Light">
-                            <h4>Interdepartmental Science Students' Society Committee Artist</h4>
-                            <p>Designed t-shirt ideas for University of Alberta's Science Students' Society </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/6-d.jpg" alt="Light">
-                            <h4>Kids Help Phone T-shirt Design Contest</h4>
-                            <p>Winning design for the Kids Help Phone t-shirt design contest. </p>
-                        </div>
+        <div class="modal fade" id="vid-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Digital Image Processing of Feather Lice from Albertan Birds</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/vid-3.jpg" alt="Light">
+                        <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- End Modal -->
+    </footer>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
-    <div class="modal fade" id="7" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Research Projects</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="research-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/7-a1.jpg" alt="Light">
-                            <img src="img/portfolio/7-a2.jpg" alt="Light">
-                            <img src="img/portfolio/7-a3.jpg" alt="Light">
-                            <h4>Digital Image Processing of Feather Lice from Albertan Birds </h4>
-                            <p>Facilitated the image capture of over 50 Albertan lice specimen under a microscope. Employed image processing techniques as well as manual graphical editing in Adobe Photoshop to produce detailed, high quality images at 300 dpi resolution. </p>
-                            <!-- <a href="img/poster.png" download>
-                                <b> DOWNLOAD RESEARCH POSTER </b>
-                            </a>-->
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/7-b1.jpg" alt="Light">
-                            <h4>Research Illustration </h4>
-                            <p>Figure 1 on “<i>Pathologic basis of antibody-mediated organ transplant rejection: from pathogenesis to diagnosis</i>” by Amani Joudeh, Khouloud Ahmad Saliba, Kaila A. Topping, and Banu Sis. </p>
-                            <a href="http://www.ncbi.nlm.nih.gov/pubmed/23838653" target="blank">
-                                <p> <b>View Here </b> </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="8" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Personal Work</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="video-owl" class="owl-carousel">
-                        <div class="item ">
-                            <a href="https://www.youtube.com/watch?v=75c2_TTHWYcimg" target="blank">
-                                <img src="img/portfolio/vid-1.jpg" alt="Light"></a>
-                            <h4>Interdepartmental Science Students' Society Rap Video</h4>
-                            <p> Produced and edited the video for I.S.S.S, which was featured in the 2014 Science Orientation at the University of Alberta.
-                        </div>
-                        <div class="item">
-                            <a href="https://www.youtube.com/watch?v=cRgB0sU_IpI" target="blank"><img src="img/portfolio/vid-2.jpg" alt="Light"></a>
-                            <h4>KIAS 2013: Tomorrow's Ideas Now Conference Video</h4>
-                            <p> Developed the short promo for the Kule Institute for Advanced Study </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/vid-3.jpg" alt="Light">
-                            <h4>Porphyrius: Draw My Life</h4>
-                            <p>Classics 305 Personal Diary Project: Drew/edited the story of Porphyrius, the greatest Charioteer of Ancient Rome.</p>
-                            <p><a href="https://www.youtube.com/watch?v=N4UTFSjxV9U" target="blank"><b> Watch Part 1 </b></a></p>
-                            <p><a href="https://www.youtube.com/watch?v=i4pRkQrjfSU" target="blank"><b> Watch Part 2 </b></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="9" tabindex="-1" role="dialog" aria-labelledby="kiasModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="personalModalLabel">Traditional Work</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="art-owl" class="owl-carousel">
-                        <div class="item ">
-                            <img src="img/portfolio/9-a.jpg" alt="Light">
-                            <h4>Crestwood School Mural</h4>
-                            <p> Designed and painted an 8' x 10' mural for Crestwood School </p>
-                        </div>
-                        <div class="item ">
-                            <img src="img/portfolio/9-b1.jpg" alt="Light">
-                            <img src="img/portfolio/9-b2.jpg" alt="Light">
-                            <img src="img/portfolio/9-b3.jpg" alt="Light">
-                            <img src="img/portfolio/9-b4.jpg" alt="Light">
-                            <h4>Art I.B Portfolio</h4>
-                            <p> Portions of work from the Art I.B Portfolio</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Resource jQuery -->
     <!-- jQuery -->
-    <script>
-    $(document).ready(function($) {
-
-        $("#game-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#newsletter-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#shirt-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-        $("#research-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-
-        });
-        $("#video-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-
-        });
-
-        $("#art-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-
-
-        $("#research-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-
-        $("#poster-owl").owlCarousel({
-            navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            singleItem: true,
-            autoHeight: true
-        });
-    });
-    </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/load.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
     <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
+    <script src="js/freelancer.js"></script>
 </body>
 
 </html>
